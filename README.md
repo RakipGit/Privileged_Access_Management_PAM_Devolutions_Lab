@@ -245,7 +245,7 @@ The RDP connection was later used by Remote Desktop Manager to open the session 
 
 To allow Devolutions Server PAM to manage the local user password, WinRM had to be enabled on the workgroup VM.<br>
 
-On the workgroup VM, I ran: Enable-PSRemoting -Force
+On the workgroup VM, I ran: ```powershell Enable-PSRemoting -Force ```
 
 Then I enabled the firewall rule for Windows Remote Management: 
 
