@@ -45,4 +45,20 @@ For the workgroup VM, two separate connections were used:
 
 The important distinction is that RDM opens the session, while Devolutions Server PAM performs the password rotation.
 
+---
+
+## PAM Flow
+
+The general PAM flow in this lab is:
+User → DVLS - RDM → Checkout Request → Approval → Privileged Session → Check-in → Password Rotation
+
+For domain accounts:
+DVLS PAM → Domain Provider → Active Directory → Managed Domain Account
+
+For workgroup local accounts:
+DVLS PAM → Windows User Provider → WinRM 5985 → Local Windows Account
+
+---
+## What I Did
+
 
