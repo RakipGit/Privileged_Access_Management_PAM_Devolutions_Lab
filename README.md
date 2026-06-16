@@ -87,3 +87,13 @@ IIS was used to host the Devolutions Server web application. The Devolutions Ser
 - Confirmed the relationship between the accounts:
               Managed Account: DOMAIN\pamtest3
               Provider Account: DOMAIN\svr-dvls-pam
+
+### 4. Domain Authentication in Devolutions Server
+
+- Configured Domain Authentication in Devolutions Server.
+- Connected DVLS with the Active Directory domain.
+- Allowed DVLS to recognize domain users and groups.
+- Verified that Active Directory users could be used inside DVLS.
+
+This allowed users from Active Directory to log in to the Devolutions Server web interface instead of relying only on local DVLS users.
+
