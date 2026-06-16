@@ -15,3 +15,21 @@ In the first part of the lab, I connected Devolutions Server with Active Directo
 In the second part of the lab, I extended the setup by adding a Windows 10 Pro workgroup VM that was not joined to the Active Directory domain. I configured WinRM, TrustedHosts, a Windows User Provider and a local managed account so Devolutions Server PAM could rotate the password of a local Windows user.
 
 The project also includes MFA for Devolutions Server users, Devolutions Gateway as an additional controlled access layer with session recording and SQL database backup for the Devolutions Server environment.
+
+---
+
+## Lab Architecture
+
+The lab was built using virtual machines in Hyper-V.
+
+Lab Architecture
+
+The lab was built using virtual machines in Hyper-V.
+
+Machine	Operating System	Role
+Domain Controller	Windows Server	Active Directory Domain Services, domain users and delegated permissions
+DVLS Server	Windows Server	Devolutions Server, IIS, SQL database connection and PAM configuration
+FSASKISI2	Windows VM / Server VM	Target machine used for domain privileged account RDP testing
+VM-WORK	Windows 10 Pro	Workgroup VM used for local account PAM password rotation
+RDM Client	Windows machine	Remote Desktop Manager client used to open PAM-controlled sessions
+
