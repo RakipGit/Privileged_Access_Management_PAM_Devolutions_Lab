@@ -158,7 +158,7 @@ When a user requests access to the privileged account, the request is not automa
 
 This adds an additional control point before privileged access is granted.
 
-### 13. Remote Desktop Manager 
+### 12. Remote Desktop Manager 
 
 - Installed Remote Desktop Manager.
 - Created a Devolutions Server data source to connect RDM to the DVLS server.
@@ -174,7 +174,7 @@ Through RDM, users can:
 - Open controlled remote sessions without manually typing the privileged password, just straight logging in.
 - Use and configure the DVLS vault structure directly from the RDM interface.
 
-### 14. Testing Domain PAM Through an RDP Entry
+### 13. Testing Domain PAM Through an RDP Entry
 
 To test the PAM setup, I created a new RDP Windows entry in Remote Desktop Manager. The RDP entry pointed to a Windows VM and was configured to use as loggin the managed privileged account `pamtest3`.
 
@@ -191,7 +191,7 @@ h) Log off from the session.
 j) Check in the account.
 k) Verify password rotation from DVLS logs.
 
-### 15. Workgroup VM PAM Integration
+### 14. Workgroup VM PAM Integration
 
 After completing the domain based PAM configuration, I extended the lab by adding a Windows 10 Pro workgroup VM that was not joined to the Active Directory domain. The goal was to test whether Devolutions Server PAM could also manage and rotate the password of a local Windows account.
 
@@ -202,7 +202,7 @@ For this scenario, I used two local accounts on the workgroup VM:
 
 The dvls-mgmt account was used by Devolutions Server through the Windows User Provider and the poppi account was the local privileged account whose password was rotated by PAM.
 
-### 16. Workgroup VM Communication Flow
+### 15. Workgroup VM Communication Flow
 
 For the workgroup VM, two separate connections were used:
 
@@ -213,7 +213,7 @@ For the workgroup VM, two separate connections were used:
 
 Remote Desktop Manager does not rotate the password. RDM only uses the current password stored in PAM to open the session. Devolutions Server PAM performs the actual password rotation. RDP was used only to open the remote desktop session while WinRM was used by Devolutions Server PAM to perform heartbeat checks and rotate the local user password.
 
-### 17. Creating Local Users on the Workgroup VM
+### 16. Creating Local Users on the Workgroup VM
 
 On the workgroup VM, I created two local users.
 
@@ -232,4 +232,13 @@ net localgroup administrators poppi /add
 ```
 
 The `dvls-mgmt` account remains the local administrator account used by DVLS for management operations. The `poppi` account is the managed local account whose password is rotated by PAM.
+
+### 17. Enabling RDP on the Workgroup VM
+
+- Enabled Remote Desktop on the workgroup VM.
+- Allowed RDP through the firewall.
+- Confirmed that the VM could accept RDP connections on port 3389.
+
+The RDP connection was later used by Remote Desktop Manager to open the session as the managed local account.
+
 
