@@ -98,3 +98,8 @@ IIS was used to host the Devolutions Server web application. The Devolutions Ser
 
 This allowed users from Active Directory to log in to the Devolutions Server web interface instead of relying only on local DVLS users.
 
+### 5. Logging in to DVLS with an Active Directory User
+
+After configuring Domain Authentication, I tested logging in to the DVLS web interface using an Active Directory user: aksi3.
+
+Using Active Directory users makes access management cleaner because authentication can be centralized through the domain.This showed that DVLS could use the existing domain identity system. My example login: BLUEVALUE\aski3
