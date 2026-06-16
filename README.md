@@ -134,3 +134,18 @@ A PAM vault was required to manage privileged accounts with password rotation.
 - Tested the connection with heartbeat to confirm the successful integration of the privileged account.
 
 After the account was added, Devolutions Server became responsible for managing its password lifecycle. Heartbeat was used to confirm that the managed account was healthy and that DVLS could validate the credential.
+
+### 10. Checkout, Check-in and Password Rotation
+
+- Configured checkout for the managed account and its password rotation.
+- Enabled rotation after check in of the new password when the user logs out of the machine that he used PAM with the privileged account.
+- Verified that the old password was no longer valid after rotation.
+
+The checkout/check-in process works as follows:
+
+a. The user requests access to the managed account.
+b. The account is checked out for temporary use.
+c. The user opens the remote session.
+d. After the session is finished, the account is checked in.
+e. DVLS rotates the password according to the configured policy.
+f. The new password is stored securely in the vault.
