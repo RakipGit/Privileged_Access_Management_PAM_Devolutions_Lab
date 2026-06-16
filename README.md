@@ -143,11 +143,9 @@ After the account was added, Devolutions Server became responsible for managing 
 
 The checkout/check-in process works as follows:
 
-a. The user requests access to the managed account.
-
-b. The account is checked out for temporary use.
-
-c. The user opens the remote session.
-d. After the session is finished, the account is checked in.
-e. DVLS rotates the password according to the configured policy.
-f. The new password is stored securely in the vault.
+-a. The user requests access to the managed account.
+-b. The account is checked out for temporary use.
+-c. The user opens the remote session.
+-d. After the session is finished, the account is checked in.
+-e. DVLS rotates the password according to the configured policy.
+-f. The new password is stored securely in the vault.
