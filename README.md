@@ -24,16 +24,16 @@ The lab was built using virtual machines in Hyper-V.
 
 | Machine             | Operating System       | Role                                                                 |
 | ------------------- | ---------------------- | -------------------------------------------------------------------- |
-| `Domain Controller` | Windows Server         | Active Directory Domain Services, domain users and delegated permissions       |
-| `DVLS-SERVER`       | Windows Server         | Devolutions Server, IIS, SQL connection, PAM configuration and backup          |
+| `Domain Controller` | Windows Server 2019       | Active Directory Domain Services, domain users and delegated permissions       |
+| `DVLS-SERVER`       | Windows Server 2019        | Devolutions Server, IIS, SQL connection, PAM configuration and backup          |
 | `VM-WORK`           | Windows 10 Pro         | Workgroup VM used for local account PAM integration and password rotation      |
-| `VM-RDM`            | Windows machine        | Remote Desktop Manager client used to open PAM-controlled sessions             |
+| `VM-ADMIN-RDM`            | Windows Server 2019       | Remote Desktop Manager client used to open PAM-controlled sessions             |
 
 The lab included two main PAM scenarios:
 
 | Scenario | Target Account Type | Provider Used | Main Purpose |
 | -------- | ------------------- | ------------- | ------------ |
 | Domain PAM | Active Directory domain user | Domain User Provider | Manage and rotate a privileged domain account |
-| Workgroup PAM | Local Windows user | Windows User Provider | Manage and rotate a local account on a non-domain VM |
+| Workgroup PAM | Local Windows user | Windows User Provider | Manage and rotate a local account on a non domain VM |
 
 
