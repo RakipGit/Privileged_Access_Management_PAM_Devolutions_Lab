@@ -103,3 +103,11 @@ This allowed users from Active Directory to log in to the Devolutions Server web
 After configuring Domain Authentication, I tested logging in to the DVLS web interface using an Active Directory user: aksi3.
 
 Using Active Directory users makes access management cleaner because authentication can be centralized through the domain. This shows that DVLS can use the existing domain identity system. My example login: BLUEVALUE\aski3
+
+### 6. MFA for Devolutions Server Users
+
+- Enabled MFA for selected DVLS users.
+- Configured TOTP authentication.
+- Tested the login flow through the Devolutions Server web interface and Verified that users use both their credentials and the MFA code to access DVLS.
+
+MFA adds another security layer because access to Devolutions Server is not protected only by username and password.
