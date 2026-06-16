@@ -154,3 +154,5 @@ d. After the session is finished, the account is checked in.
 e. DVLS rotates the password according to the configured policy.
 
 f. The new password is stored securely in the vault.
+
+This reduces the risk of static or reused privileged passwords.
