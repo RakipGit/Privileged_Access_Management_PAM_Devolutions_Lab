@@ -14,4 +14,4 @@ In the first part of the lab, I connected Devolutions Server with Active Directo
 
 In the second part of the lab, I extended the setup by adding a Windows 10 Pro workgroup VM that was not joined to the Active Directory domain. I configured WinRM, TrustedHosts, a Windows User Provider and a local managed account so Devolutions Server PAM could rotate the password of a local Windows user.
 
-The project also includes MFA for Devolutions Server users, Devolutions Gateway as an additional controlled access layer, session recording concepts and SQL database backup for the Devolutions Server environment.
+The project also includes MFA for Devolutions Server users, Devolutions Gateway as an additional controlled access layer with session recording and SQL database backup for the Devolutions Server environment.
