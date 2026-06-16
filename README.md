@@ -227,6 +227,9 @@ net localgroup administrators dvls-mgmt /add
 The second user was the local managed account:
 
 ```powershell
-net user poppi <InitialManagedUserPassword> /add<br>
+net user poppi Password /add<br>
 net localgroup administrators poppi /add
 ```
+
+The `dvls-mgmt` account remains the local administrator account used by DVLS for management operations. The `poppi` account is the managed local account whose password is rotated by PAM.
+
