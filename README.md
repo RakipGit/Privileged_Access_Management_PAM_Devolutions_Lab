@@ -27,7 +27,7 @@ The lab was built using virtual machines in Hyper-V.
 | `Domain Controller` | Windows Server 2019       | Active Directory Domain Services, domain users and delegated permissions       |
 | `DVLS-SERVER`       | Windows Server 2019        | Devolutions Server, IIS, SQL connection, PAM configuration and backup          |
 | `VM-WORK`           | Windows 10 Pro         | Workgroup VM used for local account PAM integration and password rotation      |
-| `VM-ADMIN-RDM`            | Windows Server 2019       | Remote Desktop Manager client used to open PAM-controlled sessions             |
+| `VM-ADMIN-RDM`            | Windows Server 2019       | Remote Desktop Manager used to open PAM controlled sessions             |
 
 The lab included two main PAM scenarios:
 
