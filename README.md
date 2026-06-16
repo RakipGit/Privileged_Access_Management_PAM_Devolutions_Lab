@@ -133,4 +133,4 @@ A PAM vault was required to manage privileged accounts with password rotation.
 - Added the domain user `pamtest3` to the PAM vault.
 - Tested the connection with heartbeat to confirm the successful integration of the privileged account.
 
-After the account was added, Devolutions Server became responsible for managing its password lifecycle.
+After the account was added, Devolutions Server became responsible for managing its password lifecycle. Heartbeat was used to confirm that the managed account was healthy and that DVLS could validate the credential.
