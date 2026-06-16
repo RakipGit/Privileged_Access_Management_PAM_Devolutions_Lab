@@ -36,4 +36,13 @@ The lab included two main PAM scenarios:
 | Domain PAM | Active Directory domain user | Domain User Provider | Manage and rotate a privileged domain account |
 | Workgroup PAM | Local Windows user | Windows User Provider | Manage and rotate a local account on a non domain VM |
 
+For the workgroup VM, two separate connections were used:
+
+| Connection | Purpose |
+| ---------- | ------- |
+| RDP 3389 | Used by RDM to open the remote desktop session |
+| WinRM 5985 | Used by Devolutions Server PAM for heartbeat and password rotation |
+
+The important distinction is that RDM opens the session, while Devolutions Server PAM performs the password rotation.
+
 
