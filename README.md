@@ -241,7 +241,7 @@ The `dvls-mgmt` account remains the local administrator account used by DVLS for
 
 The RDP connection was later used by Remote Desktop Manager to open the session as the managed local account.
 
-### 19. Enabling WinRM on the Workgroup VM
+### 18. Enabling WinRM on the Workgroup VM
 
 To allow Devolutions Server PAM to manage the local user password, WinRM had to be enabled on the workgroup VM.<br>
 
@@ -257,7 +257,7 @@ Then I enabled the firewall rule for Windows Remote Management:
 Enable-NetFirewallRule -DisplayGroup "Windows Remote Management
 ```
 
-### 20. Adding the Workgroup VM to TrustedHosts
+### 19. Adding the Workgroup VM to TrustedHosts
 
 To allow WinRM communication, I added the workgroup VM IP address to TrustedHosts on the Devolutions Server machine.
 
