@@ -156,3 +156,31 @@ e. DVLS rotates the password according to the configured policy.
 f. The new password is stored securely in the vault.
 
 This reduces the risk of static or reused privileged passwords.
+
+### 11. Checkout Approval Workflow
+
+- Configured approval for checkout requests.
+- Assigned an approver: `supervisor1`.
+- Tested the approval flow from Remote Desktop Manager (RDM) and the DVLS web interface.
+
+When a user requests access to the privileged account, the request is not automatically approved. An approver can review the request and either approve or deny it before the user gets access.
+
+This adds an additional control point before privileged access is granted.
+
+### 13. Remote Desktop Manager 
+
+- Installed Remote Desktop Manager.
+- Created a Devolutions Server data source.
+- Connected RDM to the DVLS server.
+- Verified that vaults and entries from DVLS appeared in RDM.
+
+Remote Desktop Manager was used as the main client application for opening remote sessions.
+
+Through RDM, users can:
+
+- Open RDP sessions.
+- Use credentials stored in DVLS.
+- Access only the entries they are allowed to see.
+- Request checkout for privileged accounts.
+- Open controlled remote sessions without manually typing the privileged password.
+- Use the DVLS vault structure directly from the RDM interface.
