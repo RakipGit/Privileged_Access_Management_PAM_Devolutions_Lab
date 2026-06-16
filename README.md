@@ -257,3 +257,19 @@ Then I enabled the firewall rule for Windows Remote Management:
 Enable-NetFirewallRule -DisplayGroup "Windows Remote Management
 ```
 
+### 20. Adding the Workgroup VM to TrustedHosts
+
+To allow WinRM communication, I added the workgroup VM IP address to TrustedHosts on the Devolutions Server machine.
+
+On the Devolutions Server VM, I ran:
+
+```powershell
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "192.168.10.x" -Force
+``` 
+Then I verified the TrustedHosts configuration: 
+```powershell
+Get-Item WSMan:\localhost\Client\TrustedHosts
+```
+
+This allowed the Devolutions Server VM: `dvls-server` to trust the workgroup VM for WinRM-based management.
+
