@@ -22,14 +22,12 @@ The project also includes MFA for Devolutions Server users, Devolutions Gateway 
 
 The lab was built using virtual machines in Hyper-V.
 
-Lab Architecture
+| Machine             | Operating System       | Role                                                                 |
+| ------------------- | ---------------------- | -------------------------------------------------------------------- |
+| `Domain Controller` | Windows Server         | Active Directory Domain Services, domain users and delegated permissions |
+| `DVLS-SERVER`       | Windows Server         | Devolutions Server, IIS, SQL connection, PAM configuration and backup |
+| `FSASKISI2`         | Windows VM / Server VM | Domain target machine used for RDP testing with the managed privileged account |
+| `VM-WORK`           | Windows 10 Pro         | Workgroup VM used for local account PAM integration and password rotation |
+| `VM-RDM`        | Windows machine        | Remote Desktop Manager client used to open PAM-controlled sessions |
 
-The lab was built using virtual machines in Hyper-V.
-
-Machine	Operating System	Role
-Domain Controller	Windows Server	Active Directory Domain Services, domain users and delegated permissions
-DVLS Server	Windows Server	Devolutions Server, IIS, SQL database connection and PAM configuration
-FSASKISI2	Windows VM / Server VM	Target machine used for domain privileged account RDP testing
-VM-WORK	Windows 10 Pro	Workgroup VM used for local account PAM password rotation
-RDM Client	Windows machine	Remote Desktop Manager client used to open PAM-controlled sessions
 
