@@ -64,7 +64,7 @@ DVLS PAM → Windows User Provider → WinRM 5985 → Local Windows Account
 ---
 ## What I Did
 
-1. Devolutions Server Installation and IIS Instance
+### 1. Devolutions Server Installation and IIS Instance
 - Installed Devolutions Server Console.
 - Created and configured an IIS instance for Devolutions Server.
 - Verified that the Devolutions Server web interface was reachable from the browser.
