@@ -170,17 +170,19 @@ This adds an additional control point before privileged access is granted.
 ### 13. Remote Desktop Manager 
 
 - Installed Remote Desktop Manager.
-- Created a Devolutions Server data source.
-- Connected RDM to the DVLS server.
+- Created a Devolutions Server data source to connect RDM to the DVLS server.
 - Verified that vaults and entries from DVLS appeared in RDM.
 
 Remote Desktop Manager was used as the main client application for opening remote sessions.
 
 Through RDM, users can:
 
-- Open RDP sessions.
-- Use credentials stored in DVLS.
+- Open RDP sessions ny using the privileged accounts credentials stored in DVLS.
 - Access only the entries they are allowed to see.
 - Request checkout for privileged accounts.
-- Open controlled remote sessions without manually typing the privileged password.
-- Use the DVLS vault structure directly from the RDM interface.
+- Open controlled remote sessions without manually typing the privileged password, just straight logging in.
+- Use and configure the DVLS vault structure directly from the RDM interface.
+
+### 14. Testing Domain PAM Through an RDP Entry
+
+  
