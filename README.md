@@ -123,7 +123,14 @@ The PAM provider is the component that allows Devolutions Server to perform priv
 
 - Created a PAM vault.
 - Used the PAM vault to store and manage privileged accounts.
-- Assigned vault level permissions.
+- Assigned the vault to the correct Domain Provider.
 - Defined the administrator of the vault (`aski3` and the default `dvls-admin`).
 
 A PAM vault was required to manage privileged accounts with password rotation.
+
+### 9. Adding the Managed Domain Account to the PAM Vault
+
+- Added the domain user `pamtest3` to the PAM vault.
+- Tested the connection with heartbeat to confirm the successful integration of the privileged account.
+
+After the account was added, Devolutions Server became responsible for managing its password lifecycle.
