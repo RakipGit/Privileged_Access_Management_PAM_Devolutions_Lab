@@ -76,8 +76,8 @@ IIS was used to host the Devolutions Server web application. The Devolutions Ser
 
   I created two main Active Directory users for the domain PAM scenario: 
 
-  - pamtest3 = Managed privileged domain account
-  - svr-dvls-pam = Provider/service account used by DVLS for password rotation.
+  - `pamtest3` = Managed privileged domain account
+  - `svr-dvls-pam` = Provider/service account used by DVLS for password rotation.
 
   The pamtest3 account was the privileged account that was added to the PAM vault. This is the account that users check out and use for remote access. The svr-dvls-pam account was used as the provider account. This account was given the required delegated permissions in Active Directory so Devolutions Server could rotate   the password of the managed account.
 
@@ -86,8 +86,8 @@ IIS was used to host the Devolutions Server web application. The Devolutions Ser
 - Assigned delegated permissions to the provider account.
 - Allowed the provider account to manage or reset the password of the managed account.
 - Confirmed the relationship between the accounts:
-              Managed Account: DOMAIN\pamtest3
-              Provider Account: DOMAIN\svr-dvls-pam
+              Managed Account: `DOMAIN\pamtest3`
+              Provider Account: `DOMAIN\svr-dvls-pam`
 
 ### 4. Domain Authentication in Devolutions Server
 
@@ -100,9 +100,9 @@ This allowed users from Active Directory to log in to the Devolutions Server web
 
 ### 5. Logging in to DVLS with an Active Directory User
 
-After configuring Domain Authentication, I tested logging in to the DVLS web interface using an Active Directory user: aksi3.
+After configuring Domain Authentication, I tested logging in to the DVLS web interface using an Active Directory user: `aksi3`.
 
-Using Active Directory users makes access management cleaner because authentication can be centralized through the domain. This shows that DVLS can use the existing domain identity system. My example login: BLUEVALUE\aski3
+Using Active Directory users makes access management cleaner because authentication can be centralized through the domain. This shows that DVLS can use the existing domain identity system. My example login: `BLUEVALUE\aski3`
 
 ### 6. MFA for Devolutions Server Users
 
@@ -111,3 +111,19 @@ Using Active Directory users makes access management cleaner because authenticat
 - Tested the login flow through the Devolutions Server web interface and Verified that users use both their credentials and the MFA code to access DVLS.
 
 MFA adds another security layer because access to Devolutions Server is not protected only by username and password.
+
+### 7. PAM Domain Provider Configuration
+
+- Configured and connected the PAM provider with the delegated provider/service account: `svr-dvls-pam`.
+- Used the provider for domain account management, heartbeat and password rotation.
+
+The PAM provider is the component that allows Devolutions Server to perform privileged account management operations against Active Directory accounts.
+
+### 8. PAM Vault Creation
+
+- Created a PAM vault.
+- Used the PAM vault to store and manage privileged accounts.
+- Assigned vault level permissions.
+- Defined the administrator of the vault (`aski3` and the default `dvls-admin`).
+
+A PAM vault was required to manage privileged accounts with password rotation.
