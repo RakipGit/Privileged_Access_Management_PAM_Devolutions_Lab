@@ -219,10 +219,14 @@ On the workgroup VM, I created two local users.
 
 The first user was the local management account:
 
-net user dvls-mgmt <ManagementUserPassword> /add<br>
+```powershell
+net user dvls-mgmt Password /add<br>
 net localgroup administrators dvls-mgmt /add
+```
 
 The second user was the local managed account:
 
+```powershell
 net user poppi <InitialManagedUserPassword> /add<br>
 net localgroup administrators poppi /add
+```
