@@ -36,15 +36,6 @@ The lab included two main PAM scenarios:
 | Domain PAM | Active Directory domain user | Domain User Provider | Manage and rotate a privileged domain account |
 | Workgroup PAM | Local Windows user | Windows User Provider | Manage and rotate a local account on a non domain VM |
 
-For the workgroup VM, two separate connections were used:
-
-| Connection | Purpose |
-| ---------- | ------- |
-| RDP 3389 | Used by RDM to open the remote desktop session |
-| WinRM 5985 | Used by Devolutions Server PAM for heartbeat and password rotation |
-
-The important distinction is that RDM opens the session, while Devolutions Server PAM performs the password rotation.
-
 ---
 
 ## PAM Flow
@@ -210,3 +201,28 @@ For this scenario, I used two local accounts on the workgroup VM:
 - `poppi` = Local managed account added to the PAM vault.
 
 The dvls-mgmt account was used by Devolutions Server through the Windows User Provider and the poppi account was the local privileged account whose password was rotated by PAM.
+
+### 16. Workgroup VM Communication Flow
+
+For the workgroup VM, two separate connections were used:
+
+| Connection | Purpose |
+| ---------- | ------- |
+| RDP 3389 | Used by RDM to open the remote desktop session |
+| WinRM 5985 | Used by Devolutions Server PAM for the password rotation |
+
+Remote Desktop Manager does not rotate the password. RDM only uses the current password stored in PAM to open the session. Devolutions Server PAM performs the actual password rotation. RDP was used only to open the remote desktop session while WinRM was used by Devolutions Server PAM to perform heartbeat checks and rotate the local user password.
+
+### 17. Creating Local Users on the Workgroup VM
+
+On the workgroup VM, I created two local users.
+
+The first user was the local management account:
+
+net user dvls-mgmt <ManagementUserPassword> /add
+net localgroup administrators dvls-mgmt /add
+
+The second user was the local managed account:
+
+net user poppi <InitialManagedUserPassword> /add
+net localgroup administrators poppi /add
