@@ -185,4 +185,28 @@ Through RDM, users can:
 
 ### 14. Testing Domain PAM Through an RDP Entry
 
-  
+To test the PAM setup, I created a new RDP Windows entry in Remote Desktop Manager. The RDP entry pointed to a Windows VM and was configured to use as loggin the managed privileged account `pamtest3`.
+
+The flow was:
+
+a) Open Remote Desktop Manager.
+b) Connect to the DVLS data source.
+c) Select the PAM vault.
+d) Open the RDP entry.
+e) Request checkout for the privileged account.
+f) Wait for approval.
+g) Open the RDP session as the managed privileged user.
+h) Log off from the session.
+j) Check in the account.
+k) Verify password rotation from DVLS logs.
+
+### 15. Workgroup VM PAM Integration
+
+After completing the domain based PAM configuration, I extended the lab by adding a Windows 10 Pro workgroup VM that was not joined to the Active Directory domain. The goal was to test whether Devolutions Server PAM could also manage and rotate the password of a local Windows account.
+
+For this scenario, I used two local accounts on the workgroup VM:
+
+-`dvls-mgmt` = Local administrator account used by DVLS for management operations.
+-`poppi` = Local managed account added to the PAM vault.
+
+The dvls-mgmt account was used by Devolutions Server through the Windows User Provider and the poppi account was the local privileged account whose password was rotated by PAM.
