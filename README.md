@@ -102,4 +102,4 @@ This allowed users from Active Directory to log in to the Devolutions Server web
 
 After configuring Domain Authentication, I tested logging in to the DVLS web interface using an Active Directory user: aksi3.
 
-Using Active Directory users makes access management cleaner because authentication can be centralized through the domain.This showed that DVLS could use the existing domain identity system. My example login: BLUEVALUE\aski3
+Using Active Directory users makes access management cleaner because authentication can be centralized through the domain. This shows that DVLS can use the existing domain identity system. My example login: BLUEVALUE\aski3
