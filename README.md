@@ -74,13 +74,11 @@ IIS was used to host the Devolutions Server web application. The Devolutions Ser
 
 ### 2. Active Directory User Preparation
 
-I created two main Active Directory users for the domain PAM scenario: 
+  I created two main Active Directory users for the domain PAM scenario: 
 
-pamtest3 = Managed privileged domain account.
+  pamtest3 = Managed privileged domain account and svr-dvls-pam = Provider/service account used by DVLS for password rotation.
 
-svr-dvls-pam = Provider/service account used by DVLS for password rotation.
-
-The pamtest3 account was the privileged account that was added to the PAM vault. This is the account that users check out and use for remote access.
+  The pamtest3 account was the privileged account that was added to the PAM vault. This is the account that users check out and use for remote access.
 
 The svr-dvls-pam account was used as the provider account. This account was given the required delegated permissions in Active Directory so Devolutions Server could rotate the password of the managed account.
 
