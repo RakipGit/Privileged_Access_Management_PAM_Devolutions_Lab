@@ -206,7 +206,7 @@ After completing the domain based PAM configuration, I extended the lab by addin
 
 For this scenario, I used two local accounts on the workgroup VM:
 
--`dvls-mgmt` = Local administrator account used by DVLS for management operations.
--`poppi` = Local managed account added to the PAM vault.
+- `dvls-mgmt` = Local administrator account used by DVLS for management operations.
+- `poppi` = Local managed account added to the PAM vault.
 
 The dvls-mgmt account was used by Devolutions Server through the Windows User Provider and the poppi account was the local privileged account whose password was rotated by PAM.
