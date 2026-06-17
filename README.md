@@ -302,7 +302,7 @@ Administration → Privileged Access → Providers → Add → Windows User
 
 After saving the provider, I tested the connection and confirmed that it was successful. 
 
--
+
 
 ### 22. Adding the Local Workgroup User to the PAM Vault
 
@@ -337,7 +337,7 @@ h. The old password is no longer valid.
 
 This proved that Devolutions Server PAM can manage not only Active Directory accounts but also local users on standalone workgroup Windows machines.
 
-## 24. Devolutions Gateway
+### 24. Devolutions Gateway
 
 Devolutions Gateway was included as an additional access component. The Gateway can be used as an intermediate connection point between Remote Desktop Manager / Devolutions Server and target systems. 
 
@@ -346,3 +346,35 @@ Instead of connecting directly to a target VM or server, the session can pass th
 RDM / DVLS → Devolutions Gateway → Target VM / Server / Machine
 
 The Gateway does not replace PAM. It complements PAM by providing a controlled path for remote connections.
+
+### 25. Session Recording
+
+Devolutions Gateway can also support session recording when configured. Session recording allows privileged remote sessions to be recorded for audit and review purposes. This improves accountability because administrators can later review what happened during a privileged session.
+
+The general idea is:
+
+a) User opens session from RDM.
+
+b) DVLS checks permissions and PAM access.
+
+c) Connection passes through Gateway.
+
+d) Session recording captures the privileged session.
+
+e) User connects to the target system.
+
+### 26. Devolutions Server Backup
+
+I created a backup of the Devolutions Server SQL database using SQL Server Management Studio.
+
+This is important because the DVLS database contains important configuration and operational data, such as: 
+- Vaults
+- Entries
+- Users
+- Permissions
+- PAM configuration
+- Provider configuration
+- Audit and history data
+
+For a more complete recovery plan, the Devolutions Server application files and configuration should also be considered in addition to the SQL database backup.
+
