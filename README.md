@@ -386,8 +386,14 @@ For a more complete recovery plan, the Devolutions Server application files and 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
+### 1. Devolutions Server Console and IIS Instance
 
-### 1. Assigning delegated permissions to `svr-dvls-pam` on the `PAM ACCOUNTS` group, which contains the managed privileged account `pamtest3` in Active Directory.
+![Server Console](images/IIS1.png)
+![Server Console](images/IISDB.png)
+![Server Console](images/DVLS-CONSOLE.png)
+
+
+### 2. Assigning delegated permissions to `svr-dvls-pam` on the `PAM ACCOUNTS` group, which contains the managed privileged account `pamtest3` in Active Directory.
 
 ![ADUC](images/dele1.png)
 ![ADUC](images/dele2.png)
@@ -395,12 +401,6 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![ADUC](images/dele4.png)
 ![ADUC](images/dele5.png)
 
-
-### 2. Devolutions Server Console and IIS Instance
-
-![Server Console](images/IIS1.png)
-![Server Console](images/IISDB.png)
-![Server Console](images/DVLS-CONSOLE.png)
 
 ### 3. Domain Authentication Configuration
 
