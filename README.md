@@ -386,7 +386,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
-### 1. Devolutions Server Console and IIS Instance
+### 1. Devolutions Server Console, IIS Instance and DB Integration
 
 ![Server Console](images/IIS1.png)
 ![Server Console](images/IISDB.png)
