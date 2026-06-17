@@ -409,7 +409,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ### 4. Logging in to DVLS with Active Directory User
 
-![Domain User Integration into DVLS Server](images/User1.png)
+![Domain User Integration into DVLS Server](images/User1.1.png)
 ![Domain User Integration into DVLS Server](images/User2.png)
 
 ### 5. MFA Configuration
