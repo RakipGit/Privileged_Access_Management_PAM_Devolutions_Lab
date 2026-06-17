@@ -390,6 +390,13 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ![Server Console](images/IIS1.png)
 ![Server Console](images/IISDB.png)
+![Server Console](images/DVLS-CONSOLE.png)
+
+### 2. Domain Authentication Configuration
+
+![Domain Authentication](images/Auth.png)
+![Domain Authentication](images/Auth2.png)
+
 
 
 </details>
