@@ -387,7 +387,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
 
-### 1. Active Directory users creation and assigning delegated permissions
+### 1. Assigning delegated permissions to `svr-dvls-pam` on the `PAM ACCOUNTS` group, which contains the managed privileged account `pamtest3` in Active Directory.
 
 ![ADUC](images/dele1.png)
 ![ADUC](images/dele2.png)
