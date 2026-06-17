@@ -467,6 +467,11 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![RDM](images/RDM6.png)
 ![RDM](images/RDM7.png)
 
+### 12. RDP Entry Using Privileged Account
+
+![RDP](images/ENTRY1.png)
+![RDP](images/ENTRY2.png)
+
 
 </details>
 
