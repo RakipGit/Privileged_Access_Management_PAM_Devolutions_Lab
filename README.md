@@ -465,3 +465,23 @@ Test WinRM Connectivity
 Test-NetConnection 192.168.10.x -Port 5985
 Enter-PSSession -ComputerName 192.168.10.x -Credential WORKGROUPVM\dvls-mgmt
 ```
+
+---
+
+
+
+
+
+---
+
+## Copyright Notice
+
+All content and visuals in this repository are original and may not be reused without permission.
+
+
+## Rakip 
+
+ICT Engineering | Cybersecurity & Network Security
+
+---
+
