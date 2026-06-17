@@ -445,7 +445,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ### 9. Checkout and Password Rotation Policy
 
-![Policy](images/CHECK4.png)
+![Policy](images/CHECK4.4.png)
 ![Policy](images/CHECK1.png)
 ![Policy](images/CHECK2.png)
 ![Policy](images/CHECK3.png)
