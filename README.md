@@ -394,3 +394,71 @@ For a more complete recovery plan, the Devolutions Server application files and 
 </details>
 
 ---
+
+## Tools & Technologies
+- Hyper-V for VMs: Windows Server and Windows 10 Pro
+- Devolutions Server
+- Devolutions Server Console
+- Devolutions Gateway
+- Devolutions Remote Desktop Manager
+- Devolutions Gateway with Session Recording
+- PAM Vaults for Password Rotation
+- SQL Server Management Studio for the Devolutions Server Backup
+- Active Directory Users and Computers
+- Assigning Group delegated permissions
+- Opening ports 3389 and 5985
+- PowerShell
+
+## Security Concepts Demonstrated
+
+- Privileged Access Management
+- Centralized privileged account control
+- Active Directory integration
+- Domain authentication
+- Managed privileged accounts
+- Provider account integation
+- Delegated permissions in ADUC
+- Password rotation in DVLS 
+- Heartbeat validation DVLS Server
+- Checkout and check in workflow
+- Approval based privileged access
+- Multi Factor Authentication
+- Remote session management with DVLS RDP
+- Workgroup local account management
+- WinRM local user remote management
+- Powershell configurations
+- Session recording
+- Audit trail and accountability by viewing logs into DVLS Server
+- Backup and recovery planning
+
+## Key Powershell Commands Used
+
+Workgroup VM Local User Creation 
+
+```powershell
+net user dvls-mgmt Password /add
+net localgroup administrators dvls-mgmt /add
+
+net user poppi Password /add
+net localgroup administrators poppi /add
+```
+
+Enable WinRM on Workgroup VM
+
+```powershell
+Enable-PSRemoting -Force
+Enable-NetFirewallRule -DisplayGroup "Windows Remote Management"
+```
+
+Add Workgroup VM to TrustedHosts
+
+```powershell
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "192.168.10.x" -Force
+Get-Item WSMan:\localhost\Client\TrustedHosts
+```
+Test WinRM Connectivity
+
+```powershell
+Test-NetConnection 192.168.10.x -Port 5985
+Enter-PSSession -ComputerName 192.168.10.x -Credential WORKGROUPVM\dvls-mgmt
+```
