@@ -379,3 +379,18 @@ This is important because the DVLS database contains important configuration and
 For a more complete recovery plan, the Devolutions Server application files and configuration should also be considered in addition to the SQL database backup.
 
 ---
+## Screenshots
+
+![Active Directory Lab Architecture](images/LAB-ARCHITECTURE.png)
+
+<details>
+<summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
+
+### 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
+
+![Windows Server Installation](images/WindowsServer2019.png)
+![Windows 10 Installation](images/Windows10.png)
+
+</details>
+
+---
