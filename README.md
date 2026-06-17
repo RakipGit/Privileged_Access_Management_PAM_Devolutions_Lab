@@ -438,7 +438,10 @@ Workgroup VM Local User Creation
 ```powershell
 net user dvls-mgmt Password /add
 net localgroup administrators dvls-mgmt /add
+```
+and 
 
+```powershell
 net user poppi Password /add
 net localgroup administrators poppi /add
 ```
