@@ -507,6 +507,12 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Workgroup Vault](images/POPVAULT1.png)
 ![Workgroup Vault](images/POPVAULT2.png)
 
+### 18.Opening the Workgroup RDP Session Through RDM with the privileged account: `poppi` with approval.
+
+![Workgorup-SessionRDM](images/WORK-RDM1.png)
+![Workgorup-SessionRDM](images/WORK-APPR1.png)
+![Workgorup-SessionRDM](images/WORK-OPENSESSION.png)
+
 
 </details>
 
