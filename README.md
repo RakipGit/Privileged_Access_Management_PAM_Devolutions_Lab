@@ -293,3 +293,49 @@ This confirmed that the Devolutions Server machine could reach and authenticate 
 
 ---
 
+### 21. Creating a Windows User Provider in Devolutions Server
+
+After confirming WinRM connectivity, I created a Windows User Provider in Devolutions Server:  `dvls-mgmt` .
+
+The path was:
+
+Administration → Privileged Access → Providers → Add → Windows User
+
+After saving the provider, I tested the connection and confirmed that it was successful. 
+
+---
+
+### 22. Adding the Local Workgroup User to the PAM Vault
+
+- Created PAM vault for the workgroup and linked the account to the Windows User Provider : `dvls-mgmt` .
+- Added the local user poppi as a PAM Windows User with its password. 
+- Ran heartbeat to verify that the account was accessible.
+
+After the first successful rotation, the original password was no longer used. DVLS became responsible for storing and managing the current password.
+
+--- 
+
+### 23. Testing Workgroup PAM Through RDM
+
+After adding the local account to the PAM vault, I created an RDP entry in Remote Desktop Manager for the workgroup VM.
+
+The testing flow was:
+
+a. The user opens the workgroup VM entry in RDM.
+b. RDM sends a checkout request to Devolutions Server.
+c. The approver approves the request.
+d. RDM retrieves the current password from DVLS.
+e. RDM opens an RDP connection to the workgroup VM (port:3389).
+f. The session opens as the local user `poppi`.
+g. After logoff/check-in, Devolutions Server rotates the password (port:5985).
+h. The old password is no longer valid.
+
+This proved that Devolutions Server PAM can manage not only Active Directory accounts but also local users on standalone workgroup Windows machines.
+
+## 24. Devolutions Gateway
+
+Devolutions Gateway was included as an additional access component. The Gateway can be used as an intermediate connection point between Remote Desktop Manager / Devolutions Server and target systems. 
+
+Instead of connecting directly to a target VM or server, the session can pass through the Gateway: RDM / DVLS → Devolutions Gateway → Target VM / Server / Machine
+
+The Gateway does not replace PAM. It complements PAM by providing a controlled path for remote connections.
