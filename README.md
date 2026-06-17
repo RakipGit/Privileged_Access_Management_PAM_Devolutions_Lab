@@ -484,12 +484,14 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ![Open Session](images/OPEN4.png)
 
-</details>
 
 ### 14. Checking the logs after loggin out the session. We can see that the password has been changed and also view the last password that was used for the previous session.
 
 ![Logs](images/HISTORY.png)
 ![Logs](images/HISTORY2.png)
+
+</details>
+
 
 ---
 
