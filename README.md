@@ -490,6 +490,14 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Logs](images/HISTORY1.png)
 ![Logs](images/HISTORY2.2.png)
 
+### 14.Adding the Workgroup VM to the DVLS Server VM as TrustedHosts and checking the connection to it with WinRM. 
+
+![TrustedHost](images/TRUSTEDHOST.png)
+![TrustedHost](images/WINRM1.png)
+![TrustedHost](images/WINRM2.png)
+
+
+
 </details>
 
 
