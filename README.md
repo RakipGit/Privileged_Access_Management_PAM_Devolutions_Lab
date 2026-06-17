@@ -468,9 +468,21 @@ Enter-PSSession -ComputerName 192.168.10.x -Credential WORKGROUPVM\dvls-mgmt
 
 ---
 
+## Insights & Lessons Learned
 
-
-
+- Building this lab helped me understand how Devolutions Server PAM works in practice.
+- Configuring Devolutions Server PAM with Active Directory showed how Devolutions can manage privileged domain accounts through a PAM vault and provider.
+- Creating a provider account demonstrated why delegated permissions are required for Devolutions Server PAM to rotate Active Directory account passwords.
+- Heartbeat validation helped me understand how Devolutions Server PAM checks whether the stored credential is still valid and synchronized with the real account password.
+- Checkout and check in showed how Devolutions Server PAM can provide temporary privileged access instead of exposing static credentials to users.
+- Password rotation demonstrated how Devolutions Server PAM reduces the risk of reused or permanently known privileged passwords.
+- Approval workflows showed how Devolutions Server PAM can require human approval before privileged access is granted.
+- MFA improved the security of the Devolutions Server web interface by adding a second authentication factor.
+- Remote Desktop Manager showed how Devolutions Server PAM can be used in practice to open controlled sessions without manually typing privileged passwords.
+- The workgroup VM scenario helped me understand how Devolutions Server PAM can also manage local users on non domain Windows machines.
+- Configuring WinRM and TrustedHosts showed the difference between domain-based PAM management and workgroup-based PAM management.
+- Devolutions Gateway and session recording introduced the idea of controlled access paths and session accountability inside the Devolutions ecosystem.
+- Creating a SQL backup showed the importance of protecting the Devolutions Server database because it stores vaults, entries, permissions, PAM configuration, and audit related data.
 
 ---
 
