@@ -526,7 +526,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ![Gateway](images/gateway.png)
 ![Session Recording](images/RECORD2.png)
-![Session Recording](images/RECORD.png)
+![Session Recording](images/RECORD1.png)
 
 
 
