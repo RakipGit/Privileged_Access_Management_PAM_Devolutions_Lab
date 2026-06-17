@@ -456,6 +456,18 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Approval](images/PERM1.png)
 ![Approval](images/PERM2.png)
 
+### 11. Remote Desktop Manager
+
+![RDM](images/RDM1.1.png)
+![RDM](images/RDM1.png)
+![RDM](images/RDM2.png)
+![RDM](images/RDM3.png)
+![RDM](images/RDM4.png)
+![RDM](images/RDM5.png)
+![RDM](images/RDM6.png)
+![RDM](images/RDM7.png)
+
+
 </details>
 
 ---
