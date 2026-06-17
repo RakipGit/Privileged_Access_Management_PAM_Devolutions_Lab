@@ -432,6 +432,17 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Vault Creation](images/VAULT4.png)
 ![Vault Creation](images/VAULT5.png)
 
+### 7. Managed Domain Account
+
+![Adding privileged account](images/ADDV1.png)
+![Adding privileged account](images/ADDV2.png)
+![Adding privileged account](images/ADDV3.png)
+![Adding privileged account](images/ADDV4.png)
+
+### 8. Heartbeat Validation
+
+![Heartbeat](images/HEARTBEAT1.png)
+![Heartbeat](images/HEARTBEAT2.png)
 
 </details>
 
