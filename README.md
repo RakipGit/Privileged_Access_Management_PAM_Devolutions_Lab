@@ -386,23 +386,33 @@ For a more complete recovery plan, the Devolutions Server application files and 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
-### 1. Devolutions Server Console and IIS Instance
+
+### 1. Active Directory users creation and assigning delegated permissions
+
+![ADUC](images/dele1.png)
+![ADUC](images/dele2.png)
+![ADUC](images/dele3.png)
+![ADUC](images/dele4.png)
+![ADUC](images/dele5.png)
+
+
+### 2. Devolutions Server Console and IIS Instance
 
 ![Server Console](images/IIS1.png)
 ![Server Console](images/IISDB.png)
 ![Server Console](images/DVLS-CONSOLE.png)
 
-### 2. Domain Authentication Configuration
+### 3. Domain Authentication Configuration
 
 ![Domain Authentication](images/Auth.png)
 ![Domain Authentication](images/Auth2.png)
 
-### 3. Logging in to DVLS with Active Directory User
+### 4. Logging in to DVLS with Active Directory User
 
 ![Domain User Integration into DVLS Server](images/User1.png)
 ![Domain User Integration into DVLS Server](images/User2.png)
 
-### 4. MFA Configuration
+### 5. MFA Configuration
 
 ![MFA](images/MFA2.png)
 ![MFA](images/MFA3.png)
@@ -414,8 +424,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![MFA](images/LOG3.png)
 
 
-
-### 5. PAM Domain Provider
+### 6. PAM Domain Provider
 
 ![Provider](images/PRO1.png)
 ![Provider](images/PRO2.png)
@@ -423,7 +432,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Provider](images/PRO4.png)
 ![Provider](images/PRO5.png)
 
-### 6. PAM Vault Creation
+### 7. PAM Vault Creation
 
 ![Vault Creation](images/VAULT1.png)
 ![Vault Creation](images/VAULT2.png)
@@ -431,32 +440,32 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Vault Creation](images/VAULT4.png)
 ![Vault Creation](images/VAULT5.png)
 
-### 7. Adding the Privileged Domain Account into the Vault
+### 8. Adding the Privileged Domain Account into the Vault
 
 ![Adding privileged account](images/ADDV1.1.png)
 ![Adding privileged account](images/ADDV2.png)
 ![Adding privileged account](images/ADDV3.png)
 ![Adding privileged account](images/ADDV4.png)
 
-### 8. Heartbeat Validation
+### 9. Heartbeat Validation
 
 ![Heartbeat](images/HEARTBEAT1.png)
 ![Heartbeat](images/HEARTBEAT2.png)
 
-### 9. Checkout and Password Rotation Policy
+### 10. Checkout and Password Rotation Policy
 
 ![Policy](images/CHECK4.4.png)
 ![Policy](images/CHECK1.png)
 ![Policy](images/CHECK2.png)
 ![Policy](images/CHECK3.png)
 
-### 10. Configurating the Approval Workflow
+### 11. Configurating the Approval Workflow
 
 ![Approval](images/PERM3.3.png)
 ![Approval](images/PERM1.png)
 ![Approval](images/PERM2.png)
 
-### 11. Remote Desktop Manager
+### 12. Remote Desktop Manager
 
 ![RDM](images/RDM1.1.png)
 ![RDM](images/RDM1.png)
@@ -467,12 +476,12 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![RDM](images/RDM6.png)
 ![RDM](images/RDM7.png)
 
-### 12. RDP Entry Using Privileged Account
+### 13. RDP Entry Using Privileged Account
 
 ![RDP](images/ENTRY1.png)
 ![RDP](images/ENTRY2.png)
 
-### 13. Approving the checkout request with the account: `supervisor1` in DVLS Server and opening the session in RDM.
+### 14. Approving the checkout request with the account: `supervisor1` in DVLS Server and opening the session in RDM.
 
 ![Open Session](images/OPEN1.png)
 ![Open Session](images/OPEN2.png)
@@ -485,35 +494,35 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Open Session](images/OPEN4.png)
 
 
-### 14. Checking the logs after loggin out the session. We can see that the password has been changed and also view the last password that was used for the previous session.
+### 15. Checking the logs after loggin out the session. We can see that the password has been changed and also view the last password that was used for the previous session.
 
 ![Logs](images/HISTORY1.png)
 ![Logs](images/HISTORY2.2.png)
 
-### 15. Adding the Workgroup VM to the DVLS Server VM as TrustedHosts and checking the connection to it with WinRM. 
+### 16. Adding the Workgroup VM to the DVLS Server VM as TrustedHosts and checking the connection to it with WinRM. 
 
 ![TrustedHost](images/TRUSTEDHOST.png)
 ![TrustedHost](images/WINRM1.png)
 ![TrustedHost](images/WINRM2.png)
 
-### 16. Creating the local Windows User Provider in DVLS Server
+### 17. Creating the local Windows User Provider in DVLS Server
 
 ![LocalProvider](images/WORK-PROV1.png)
 ![LocalProvider](images/WORK-PROV2.png)
 ![LocalProvider](images/WORK-PROV3.png)
 
-### 17. Adding the Workgroup Managed Local Account into a vault
+### 18. Adding the Workgroup Managed Local Account into a vault
 
 ![Workgroup Vault](images/POPVAULT1.png)
 ![Workgroup Vault](images/POPVAULT2.png)
 
-### 18. Opening the Workgroup RDP Session Through RDM with the privileged account: `poppi` with approval.
+### 19. Opening the Workgroup RDP Session Through RDM with the privileged account: `poppi` with approval.
 
 ![Workgorup-SessionRDM](images/WORK-RDM1.png)
 ![Workgorup-SessionRDM](images/WORK-APPR1.png)
 ![Workgorup-SessionRDM](images/WORK-OPENSESSION.png)
 
-### 19. Devolutions Gateway and Session Recording
+### 20. Devolutions Gateway and Session Recording
 
 ![Gateway](images/gateway.png)
 ![Session Recording](images/RECORD.png)
