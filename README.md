@@ -449,8 +449,8 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ### 9. Heartbeat Validation
 
-![Heartbeat](images/HEARTBEAT1.png)
-![Heartbeat](images/HEARTBEAT2.png)
+![Heartbeat](images/HEARTBEAT1.1.png)
+![Heartbeat](images/HEARTBEAT2.2.png)
 
 ### 10. Checkout and Password Rotation Policy
 
