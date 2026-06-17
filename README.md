@@ -381,7 +381,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ---
 ## Screenshots
 
-![Active Directory Lab Architecture](images/LAB-ARCHITECTURE.png)
+![DVLS-PAM](images/DVLS-PAM.png)
 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
