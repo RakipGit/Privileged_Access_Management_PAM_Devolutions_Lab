@@ -444,6 +444,13 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Heartbeat](images/HEARTBEAT1.png)
 ![Heartbeat](images/HEARTBEAT2.png)
 
+### 9. Checkout and Password Rotation Policy
+
+![Policy](images/CHECK4.png)
+![Policy](images/CHECK1.png)
+![Policy](images/CHECK2.png)
+![Policy](images/CHECK3.png)
+
 </details>
 
 ---
