@@ -502,9 +502,10 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![LocalProvider](images/WORK-PROV2.png)
 ![LocalProvider](images/WORK-PROV3.png)
 
-### 17. 
+### 17. Adding the Workgroup Managed Local Account into a vault
 
-
+![Workgroup Vault](images/POPVAULT1.png)
+![Workgroup Vault](images/POPVAULT2.png)
 
 
 </details>
