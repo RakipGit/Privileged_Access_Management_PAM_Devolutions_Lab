@@ -416,6 +416,15 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![MFA](images/MFA1.png)
 ![MFA](images/MFA5.png)
 
+### 5. PAM Domain Provider
+
+![Provider](images/PRO1.png)
+![Provider](images/PRO2.png)
+![Provider](images/PRO3.png)
+![Provider](images/PRO4.png)
+![Provider](images/PRO5.png)
+
+
 </details>
 
 ---
