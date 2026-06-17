@@ -496,6 +496,15 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![TrustedHost](images/WINRM1.png)
 ![TrustedHost](images/WINRM2.png)
 
+### 16. Creating the local Windows User Provider in DVLS Server
+
+![LocalProvider](images/WORK-PROV1.png)
+![LocalProvider](images/WORK-PROV2.png)
+![LocalProvider](images/WORK-PROV3.png)
+
+### 17. 
+
+
 
 
 </details>
