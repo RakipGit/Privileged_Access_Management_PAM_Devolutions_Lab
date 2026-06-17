@@ -431,7 +431,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Vault Creation](images/VAULT4.png)
 ![Vault Creation](images/VAULT5.png)
 
-### 7. Managed Domain Account
+### 7. Adding the Privileged Domain Account into the Vault
 
 ![Adding privileged account](images/ADDV1.png)
 ![Adding privileged account](images/ADDV2.png)
@@ -449,6 +449,12 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Policy](images/CHECK1.png)
 ![Policy](images/CHECK2.png)
 ![Policy](images/CHECK3.png)
+
+### 10. Configurating the Approval Workflow
+
+![Approval](images/PERM3.png)
+![Approval](images/PERM1.png)
+![Approval](images/PERM2.png)
 
 </details>
 
