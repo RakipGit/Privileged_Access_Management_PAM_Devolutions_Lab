@@ -452,7 +452,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ### 10. Configurating the Approval Workflow
 
-![Approval](images/PERM3.png)
+![Approval](images/PERM3.3.png)
 ![Approval](images/PERM1.png)
 ![Approval](images/PERM2.png)
 
