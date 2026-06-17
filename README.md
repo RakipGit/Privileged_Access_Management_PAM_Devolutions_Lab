@@ -322,12 +322,19 @@ After adding the local account to the PAM vault, I created an RDP entry in Remot
 The testing flow was:
 
 a. The user opens the workgroup VM entry in RDM.
+
 b. RDM sends a checkout request to Devolutions Server.
+
 c. The approver approves the request.
+
 d. RDM retrieves the current password from DVLS.
+
 e. RDM opens an RDP connection to the workgroup VM (port:3389).
+
 f. The session opens as the local user `poppi`.
+
 g. After logoff/check-in, Devolutions Server rotates the password (port:5985).
+
 h. The old password is no longer valid.
 
 This proved that Devolutions Server PAM can manage not only Active Directory accounts but also local users on standalone workgroup Windows machines.
@@ -336,6 +343,8 @@ This proved that Devolutions Server PAM can manage not only Active Directory acc
 
 Devolutions Gateway was included as an additional access component. The Gateway can be used as an intermediate connection point between Remote Desktop Manager / Devolutions Server and target systems. 
 
-Instead of connecting directly to a target VM or server, the session can pass through the Gateway: RDM / DVLS → Devolutions Gateway → Target VM / Server / Machine
+Instead of connecting directly to a target VM or server, the session can pass through the Gateway: 
+
+RDM / DVLS → Devolutions Gateway → Target VM / Server / Machine
 
 The Gateway does not replace PAM. It complements PAM by providing a controlled path for remote connections.
