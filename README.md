@@ -433,7 +433,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ### 7. Adding the Privileged Domain Account into the Vault
 
-![Adding privileged account](images/ADDV1.png)
+![Adding privileged account](images/ADDV1.1.png)
 ![Adding privileged account](images/ADDV2.png)
 ![Adding privileged account](images/ADDV3.png)
 ![Adding privileged account](images/ADDV4.png)
