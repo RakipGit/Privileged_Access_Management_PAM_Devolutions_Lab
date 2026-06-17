@@ -408,13 +408,14 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![MFA](images/MFA3.png)
 ![MFA](images/MFA4.png)
 
+![MFA](images/MFA1.png)
+![MFA](images/MFA5.png)
+
 ![MFA](images/LOG1.png)
 ![MFA](images/LOG2.png)
 ![MFA](images/LOG3.png)
 
 
-![MFA](images/MFA1.png)
-![MFA](images/MFA5.png)
 
 ### 5. PAM Domain Provider
 
