@@ -424,6 +424,14 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Provider](images/PRO4.png)
 ![Provider](images/PRO5.png)
 
+### 6. PAM Vault Creation
+
+![Vault Creation](images/VAULT1.png)
+![Vault Creation](images/VAULT2.png)
+![Vault Creation](images/VAULT3.png)
+![Vault Creation](images/VAULT4.png)
+![Vault Creation](images/VAULT5.png)
+
 
 </details>
 
