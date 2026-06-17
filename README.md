@@ -386,10 +386,11 @@ For a more complete recovery plan, the Devolutions Server application files and 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
-### 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
+### 1. Devolutions Server Console and IIS Instance
 
-![Windows Server Installation](images/WindowsServer2019.png)
-![Windows 10 Installation](images/Windows10.png)
+![Server Console](images/IIS1.png)
+![Server Console](images/IISDB.png)
+
 
 </details>
 
