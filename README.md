@@ -273,3 +273,23 @@ Get-Item WSMan:\localhost\Client\TrustedHosts
 
 This allowed the Devolutions Server VM: `dvls-server` to trust the workgroup VM for WinRM-based management.
 
+### 20. Testing WinRM Connectivity
+
+From the Devolutions Server machine, I tested whether port 5985 was reachable: 
+
+```powershell
+Test-NetConnection 192.168.10.x -Port 5985
+```
+The result was: 
+
+```powershell
+TcpTestSucceeded : True
+```
+I also tested a remote PowerShell session:
+```powershell
+Enter-PSSession -ComputerName 192.168.10.x -Credential WORKGROUPVM\dvls-mgmt
+```
+This confirmed that the Devolutions Server machine could reach and authenticate to the workgroup VM through WinRM.
+
+---
+
