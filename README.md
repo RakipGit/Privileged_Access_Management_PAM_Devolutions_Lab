@@ -378,3 +378,4 @@ This is important because the DVLS database contains important configuration and
 
 For a more complete recovery plan, the Devolutions Server application files and configuration should also be considered in addition to the SQL database backup.
 
+---
