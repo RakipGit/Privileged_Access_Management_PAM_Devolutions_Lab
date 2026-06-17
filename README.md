@@ -472,6 +472,17 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![RDP](images/ENTRY1.png)
 ![RDP](images/ENTRY2.png)
 
+### 13. Approving the checkout request with the account: `supervisor1` in DVLS Server and opening the session in RDM.
+
+![Open Session](images/OPEN1.png)
+![Open Session](images/OPEN2.png)
+![Open Session](images/OPEN3.png)
+
+![Open Session](images/SUPER1.png)
+![Open Session](images/SUPER2.png)
+![Open Session](images/SUPER3.png)
+
+![Open Session](images/OPEN4.png)
 
 </details>
 
