@@ -291,7 +291,6 @@ Enter-PSSession -ComputerName 192.168.10.x -Credential WORKGROUPVM\dvls-mgmt
 ```
 This confirmed that the Devolutions Server machine could reach and authenticate to the workgroup VM through WinRM.
 
----
 
 ### 21. Creating a Windows User Provider in Devolutions Server
 
@@ -303,7 +302,7 @@ Administration → Privileged Access → Providers → Add → Windows User
 
 After saving the provider, I tested the connection and confirmed that it was successful. 
 
----
+-
 
 ### 22. Adding the Local Workgroup User to the PAM Vault
 
@@ -313,7 +312,6 @@ After saving the provider, I tested the connection and confirmed that it was suc
 
 After the first successful rotation, the original password was no longer used. DVLS became responsible for storing and managing the current password.
 
---- 
 
 ### 23. Testing Workgroup PAM Through RDM
 
