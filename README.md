@@ -437,7 +437,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Vault Creation](images/VAULT1.png)
 ![Vault Creation](images/VAULT2.png)
 ![Vault Creation](images/VAULT3.png)
-![Vault Creation](images/VAULT4.png)
+![Vault Creation](images/VAULT4.4.png)
 ![Vault Creation](images/VAULT5.png)
 
 ### 8. Adding the Privileged Domain Account into the Vault
