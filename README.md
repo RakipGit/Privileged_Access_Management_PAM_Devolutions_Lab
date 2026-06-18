@@ -414,7 +414,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ### 5. MFA Configuration
 
-![MFA](images/MFA2.png)
+![MFA](images/MFA2.2.png)
 ![MFA](images/MFA3.png)
 ![MFA](images/MFA4.png)
 ![MFA](images/LOG1.png)
