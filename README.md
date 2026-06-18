@@ -396,10 +396,10 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ### 2. Assigning delegated permissions to `svr-dvls-pam` on the `PAM ACCOUNTS` group, which contains the managed privileged account `pamtest3` in Active Directory.
 
 ![ADUC](images/dele1.png)
-![ADUC](images/dele2.png)
-![ADUC](images/dele3.png)
-![ADUC](images/dele4.png)
-![ADUC](images/dele5.png)
+![ADUC](images/deleg2.png)
+![ADUC](images/deleg3.png)
+![ADUC](images/deleg4.png)
+![ADUC](images/deleg5.png)
 
 
 ### 3. Domain Authentication Configuration
