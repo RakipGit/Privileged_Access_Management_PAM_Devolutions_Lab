@@ -444,7 +444,7 @@ For a more complete recovery plan, the Devolutions Server application files and 
 
 ![Adding privileged account](images/ADDV1.1.png)
 ![Adding privileged account](images/ADDV2.png)
-![Adding privileged account](images/ADDV3.png)
+![Adding privileged account](images/ADDV3.3.png)
 ![Adding privileged account](images/ADDV4.png)
 
 ### 9. Heartbeat Validation
