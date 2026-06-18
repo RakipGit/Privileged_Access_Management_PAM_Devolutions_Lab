@@ -528,6 +528,10 @@ For a more complete recovery plan, the Devolutions Server application files and 
 ![Session Recording](images/RECORD2.png)
 ![Session Recording](images/RECORD1.png)
 
+### 21. Devolutions Server Backup
+
+![Backup](images/BACKUP.png)
+
 
 
 </details>
